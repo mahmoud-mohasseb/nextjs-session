@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -11,6 +11,27 @@ a {
   text-decoration: none;
 }
 
+.sessions {
+  font-weight: 900;
+  background: linear-gradient(89.18deg, #fc4380 17.08%, #fbbf24 99.11%);
+  background-image: linear-gradient(
+    89.18deg,
+    rgb(252, 67, 128) 17.08%,
+    rgb(251, 191, 36) 99.11%
+  );
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-color: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
 * {
   box-sizing: border-box;
-}
+} */
