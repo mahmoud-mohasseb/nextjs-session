@@ -9,16 +9,13 @@ import absoluteUrl from "next-absolute-url";
 
 // params id
 connectDB();
+
 const handler = async (req, res) => {
+  // const { token, userid } = req.body;
+  // const { method } = req;
   const io = new Server(res.socket.server);
   res.socket.server.io = io;
-  const { token, userid } = req.body;
-
-  console.log(token);
-  const { method } = req;
-
-  const users = {};
-  const socketToRoom = {};
+  res.status(400).json({ success: "hey" });
   // if (res.socket.server.io) {
   //   console.log("Socket is already running");
   // } else {
@@ -40,6 +37,8 @@ const handler = async (req, res) => {
     // });
     // console.log(roomID);
     // console.log(userid);
+    const users = {};
+    const socketToRoom = {};
 
     io.on("connection", (socket) => {
       socket.on("join room", (roomID) => {
